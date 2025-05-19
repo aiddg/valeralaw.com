@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | Valera & Associates PC - Experienced Legal Professionals</title>
+    <meta name="description" content="Meet the dedicated attorneys and legal staff at Valera & Associates PC, led by Rev. Arnedo S. Valera. Committed to excellence in immigration and anti-discrimination law.">
+    <meta name="keywords" content="Valera & Associates attorneys, legal team, Arnedo Valera profile, immigration lawyers Fairfax, anti-discrimination attorneys DC, Frances Klaire C. Garcia, Kristine Tungol Cabagnot">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Inherit styles from masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; /* Adjust if header height changes */
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-text-light: #F8F9FA;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+        .page-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://placehold.co/1920x500/003366/FFFFFF?text=Our+Dedicated+Team&font=Playfair+Display') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 6rem 0;
+        }
+        .page-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .section-title-display {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .title-underline {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-secondary);
+            margin: 0.75rem auto 0;
+        }
+        .team-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 51, 102, 0.08);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            text-align: center;
+        }
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 51, 102, 0.12);
+        }
+        .team-card img {
+            width: 100%;
+            height: 300px; /* Adjust as needed */
+            object-fit: cover;
+        }
+        .team-card-content { padding: 1.5rem; }
+        .team-member-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--color-primary);
+            margin-bottom: 0.25rem;
+        }
+        .team-member-title {
+            font-size: 0.9rem;
+            color: var(--color-secondary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .team-member-bio-snippet {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .link-to-bio {
+            font-weight: 600;
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .link-to-bio:hover { color: var(--color-secondary); }
+
+         /* Animations */
+         .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .animate-fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-secondary transition duration-300 font-bold">Our Team</a> <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-team" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-team" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Meet Our Dedicated Legal Team</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">The strength of Valera & Associates PC lies in the collective expertise, dedication, and compassion of our attorneys and support staff.</p>
+        </div>
+    </section>
+
+     <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <span class="text-gray-600">Our Team</span>
+        </div>
+    </div>
+
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="section-title-display font-display">Our Attorneys</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="team-card animate-fade-in-up">
+                    <img src="https://placehold.co/400x300/003366/FFFFFF?text=Rev.+A.S.+Valera&font=Playfair+Display" alt="Rev. Arnedo Silvano Valera">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name">Rev. Arnedo S. Valera</h3>
+                        <p class="team-member-title">Senior Attorney & Managing Partner</p>
+                        <p class="team-member-bio-snippet">Columbia University (MIA), U.S. Supreme Court Bar. Over 30 years championing immigrant rights with unparalleled expertise.</p>
+                        <a href="attorney-arnedo-valera.html" class="link-to-bio">View Full Profile <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card animate-fade-in-up" style="animation-delay: 0.15s;">
+                    <img src="https://placehold.co/400x300/004080/FFFFFF?text=F.K.C.+Garcia&font=Playfair+Display" alt="Frances Klaire C. Garcia">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name">Frances Klaire C. Garcia</h3>
+                        <p class="team-member-title">Associate Attorney</p>
+                        <p class="team-member-bio-snippet">George Washington University (LLM), NY & Philippine Bar. Dedicated to complex immigration cases.</p>
+                        <a href="attorney-frances-garcia.html" class="link-to-bio">View Full Profile <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
+                    </div>
+                </div>
+
+                <div class="team-card animate-fade-in-up" style="animation-delay: 0.3s;">
+                     <img src="https://placehold.co/400x300/00509E/FFFFFF?text=K.T.+Cabagnot&font=Playfair+Display" alt="Kristine Tungol Cabagnot">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name">Kristine Tungol Cabagnot</h3>
+                        <p class="team-member-title">Of-Counsel Attorney</p>
+                        <p class="team-member-bio-snippet">Illinois Bar. Provides valuable counsel and strategic support on a range of immigration matters.</p>
+                         <a href="attorney-kristine-cabagnot.html" class="link-to-bio">View Full Profile <i class="fas fa-arrow-right fa-xs ml-1"></i></a>
+                    </div>
+                </div>
+                </div>
+
+            <div class="mt-20 text-center mb-16">
+                <h2 class="section-title-display font-display">Our Dedicated Support Staff</h2>
+                <div class="title-underline"></div>
+                <p class="mt-4 text-gray-600 max-w-xl mx-auto">Our attorneys are supported by a highly skilled and compassionate team of paralegals, administrators, and assistants who are integral to our success and client service.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="team-card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <img src="https://placehold.co/400x300/6c757d/FFFFFF?text=JHD&font=Manrope" alt="Jennifer Hona-Davis">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">Jennifer Hona-Davis</h3>
+                        <p class="team-member-title text-sm">Senior Paralegal</p>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-in-up" style="animation-delay: 0.2s;">
+                     <img src="https://placehold.co/400x300/778899/FFFFFF?text=MU&font=Manrope" alt="Melany Ugarriza">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">Melany Ugarriza</h3>
+                        <p class="team-member-title text-sm">Senior Paralegal</p>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <img src="https://placehold.co/400x300/8A9A5B/FFFFFF?text=LS&font=Manrope" alt="Leonardus Soeharto">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">Leonardus Soeharto</h3>
+                        <p class="team-member-title text-sm">Network & System Admin</p>
+                    </div>
+                </div>
+                 <div class="team-card animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <img src="https://placehold.co/400x300/A9A9A9/FFFFFF?text=DMDH&font=Manrope" alt="Dennis Michael D. Hona">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">Dennis Michael D. Hona</h3>
+                        <p class="team-member-title text-sm">Receptionist</p>
+                    </div>
+                </div>
+                 <div class="team-card animate-fade-in-up" style="animation-delay: 0.5s;">
+                    <img src="https://placehold.co/400x300/BDB76B/FFFFFF?text=JPAC&font=Manrope" alt="John Patrick A. Cheng">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">John Patrick A. Cheng</h3>
+                        <p class="team-member-title text-sm">Management Analyst</p>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <img src="https://placehold.co/400x300/C0C0C0/FFFFFF?text=RJV&font=Manrope" alt="Raymund J. Valera">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">Raymund J. Valera</h3>
+                        <p class="team-member-title text-sm">Legal Assistant</p>
+                    </div>
+                </div>
+                 <div class="team-card animate-fade-in-up" style="animation-delay: 0.7s;">
+                    <img src="https://placehold.co/400x300/D3D3D3/FFFFFF?text=JRV&font=Manrope" alt="Joshua R. Valera">
+                    <div class="team-card-content">
+                        <h3 class="team-member-name text-xl">Joshua R. Valera</h3>
+                        <p class="team-member-title text-sm">Legal Assistant</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <section class="py-20 md:py-24 bg-primary text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Ready to Meet Our Team?</h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Learn how our experienced professionals can assist you. Schedule a confidential consultation to discuss your legal needs.
+            </p>
+            <a href="contact.html" class="btn-primary text-lg bg-secondary text-primary hover:bg-yellow-300">Schedule Your Consultation</a>
+        </div>
+    </section>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                     <p class="text-sm mb-1">Phone: <a href="tel:1-703-273-1196" class="footer-link">(703) 273-1196</a></p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs">© 1995-<span id="current-year-team"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonTeam = document.getElementById('mobile-menu-button-team');
+        const mobileMenuTeam = document.getElementById('mobile-menu-team');
+        if (mobileMenuButtonTeam && mobileMenuTeam) { 
+            mobileMenuButtonTeam.addEventListener('click', () => {
+                mobileMenuTeam.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-team a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuTeam.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerTeam = document.getElementById('main-header');
+        let lastScrollTopTeam = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (headerTeam) { 
+                if (scrollTop > lastScrollTopTeam && scrollTop > 80) {
+                    headerTeam.style.top = '-150px'; 
+                } else { 
+                    headerTeam.style.top = '0'; 
+                }
+                if (scrollTop > 50) {
+                    headerTeam.classList.add('py-3', 'shadow-lg');
+                    headerTeam.classList.remove('py-4');
+                } else {
+                    headerTeam.classList.remove('py-3', 'shadow-lg');
+                    headerTeam.classList.add('py-4');
+                }
+            }
+            lastScrollTopTeam = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearTeamEl = document.getElementById('current-year-team');
+        if (currentYearTeamEl) {
+            currentYearTeamEl.textContent = new Date().getFullYear();
+        }
+        // Intersection Observer for animations
+        const animatedElementsTeam = document.querySelectorAll('.animate-fade-in-up');
+        if (typeof IntersectionObserver !== 'undefined') {
+            const observerTeam = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerTeam.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsTeam.forEach(el => {
+                observerTeam.observe(el);
+            });
+        } else { 
+             animatedElementsTeam.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>
+```
+
+---
+
+And now, the **Legal Insights & News Page (`legal-insights.html`)**:
+
+
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Insights & News | Valera & Associates PC</title>
+    <meta name="description" content="Stay informed with the latest immigration and anti-discrimination law updates, news, and insights from the legal experts at Valera & Associates PC.">
+    <meta name="keywords" content="immigration news, anti-discrimination updates, Valera & Associates blog, DACA news, TPS updates, USCIS changes, legal insights">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Inherit styles from masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-text-light: #F8F9FA;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary { 
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.5rem; 
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(212, 175, 55, 0.15);
+        }
+        .btn-primary:hover {
+            background-color: #c5a230;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.25);
+        }
+
+        .page-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://placehold.co/1920x500/003366/FFFFFF?text=Legal+Insights+%26+Updates&font=Playfair+Display') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 6rem 0;
+        }
+        .page-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .section-title-display {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .title-underline {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-secondary);
+            margin: 0.75rem auto 0;
+        }
+        /* Article Card Styling */
+        .article-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 51, 102, 0.08);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .article-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 51, 102, 0.12);
+        }
+        .article-card-image-placeholder { 
+            background-color: var(--color-bg-subtle);
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-accent);
+        }
+        .article-card-image-placeholder i { font-size: 3rem; }
+        .article-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-card-content { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
+        .article-meta {
+            font-size: 0.8rem;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .article-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--color-primary);
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+        .article-excerpt {
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+        .article-card .btn-primary { margin-top: auto; align-self: flex-start;}
+
+        /* Sidebar styling */
+        .sidebar-widget {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+        .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-secondary);
+        }
+        .sidebar-list li a {
+            color: var(--color-text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+            display: block;
+            padding: 0.4rem 0;
+        }
+        .sidebar-list li a:hover { color: var(--color-secondary); }
+        .sidebar-search input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--color-bg-subtle);
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+        .sidebar-search input:focus {
+            outline: none;
+            border-color: var(--color-secondary);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        /* Animations */
+        .animate-fade-in {
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a> 
+                    <a href="legal-insights.html" class="text-secondary transition duration-300 font-bold">Insights</a> <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-insights" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-insights" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Legal Insights & Immigration News</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">Stay informed with updates, analyses, and resources from Valera & Associates PC.</p>
+        </div>
+    </section>
+
+    <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <span class="text-gray-600">Legal Insights & News</span>
+        </div>
+    </div>
+    
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex lg:space-x-12">
+                <div class="lg:w-2/3">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="article-card animate-fade-in">
+                            <div class="article-card-image-placeholder"><i class="far fa-newspaper"></i></div>
+                            <div class="article-card-content">
+                                <p class="article-meta">POLICY UPDATE · DECEMBER 7, 2020</p>
+                                <h3 class="article-title"><a href="article-daca-update.html" class="hover:text-secondary">Understanding Current DACA Policy Adherence by USCIS</a></h3>
+                                <p class="article-excerpt">USCIS confirms acceptance of first-time and renewal DACA requests per court orders, based on pre-September 5, 2017, terms. This includes advance parole and two-year extensions.</p>
+                                <a href="article-daca-update.html" class="btn-primary text-xs">Read Full Article</a>
+                            </div>
+                        </div>
+
+                        <div class="article-card animate-fade-in" style="animation-delay: 0.1s;">
+                            <div class="article-card-image-placeholder"><i class="fas fa-flag-usa"></i></div>
+                            <div class="article-card-content">
+                                <p class="article-meta">TPS ALERT · MARCH 8, 2021</p>
+                                <h3 class="article-title"><a href="article-venezuela-tps.html" class="hover:text-secondary">Venezuela Designated for Temporary Protected Status (TPS)</a></h3>
+                                <p class="article-excerpt">Eligible Venezuelan nationals present in the U.S. as of March 8, 2021, can apply for TPS and Employment Authorization Documents due to ongoing country conditions.</p>
+                                <a href="article-venezuela-tps.html" class="btn-primary text-xs">Read Full Article</a>
+                            </div>
+                        </div>
+
+                        <div class="article-card animate-fade-in" style="animation-delay: 0.2s;">
+                            <div class="article-card-image-placeholder"><i class="fas fa-dollar-sign"></i></div>
+                            <div class="article-card-content">
+                                <p class="article-meta">FEE UPDATE · OCTOBER 2, 2020</p>
+                                <h3 class="article-title"><a href="article-uscis-fee-injunction.html" class="hover:text-secondary">Court Enjoins USCIS Fee Schedule Rule: What It Means</a></h3>
+                                <p class="article-excerpt">A U.S. District Court has preliminarily enjoined DHS from implementing the new USCIS Fee Schedule. Current fees and forms remain in effect for now.</p>
+                                <a href="article-uscis-fee-injunction.html" class="btn-primary text-xs">Read Full Article</a>
+                            </div>
+                        </div>
+                        
+                        <div class="article-card animate-fade-in" style="animation-delay: 0.3s;">
+                            <div class="article-card-image-placeholder"><i class="far fa-calendar-alt"></i></div>
+                            <div class="article-card-content">
+                                <p class="article-meta">RESOURCE GUIDE</p>
+                                <h3 class="article-title"><a href="article-visa-bulletin-guide.html" class="hover:text-secondary">Navigating the Monthly Visa Bulletin</a></h3>
+                                <p class="article-excerpt">Understand how to read the Department of State's Visa Bulletin and its importance for your immigration journey. Links to the latest official bulletin included.</p>
+                                <a href="article-visa-bulletin-guide.html" class="btn-primary text-xs">Read Full Article</a>
+                            </div>
+                        </div>
+                        
+                        <div class="article-card animate-fade-in" style="animation-delay: 0.4s;">
+                            <div class="article-card-image-placeholder"><i class="fas fa-id-badge"></i></div>
+                            <div class="article-card-content">
+                                <p class="article-meta">USCIS RULE · JUNE 22, 2020</p>
+                                <h3 class="article-title"><a href="article-asylum-ead-rule.html" class="hover:text-secondary">USCIS Rule on Asylum Seekers' Employment Eligibility</a></h3>
+                                <p class="article-excerpt">Details on the regulatory changes affecting employment authorization for asylum applicants, including extended wait times and new bars.</p>
+                                <a href="article-asylum-ead-rule.html" class="btn-primary text-xs">Read Full Article</a>
+                            </div>
+                        </div>
+
+                        <div class="article-card animate-fade-in" style="animation-delay: 0.5s;">
+                            <div class="article-card-image-placeholder"><i class="fas fa-plane-arrival"></i></div>
+                            <div class="article-card-content">
+                                <p class="article-meta">DHS STATEMENT · JANUARY 29, 2017</p>
+                                <h3 class="article-title"><a href="article-lpr-entry-statement.html" class="hover:text-secondary">DHS Statement on LPR Entry (Historical Context)</a></h3>
+                                <p class="article-excerpt">Reviewing past DHS statements regarding the entry of Lawful Permanent Residents during periods of policy change.</p>
+                                <a href="article-lpr-entry-statement.html" class="btn-primary text-xs">Read Full Article</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <nav class="mt-12 pt-8 border-t border-gray-200 flex justify-center space-x-2" aria-label="Pagination">
+                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Previous</a>
+                        <a href="#" aria-current="page" class="px-4 py-2 text-sm font-medium text-white bg-primary border border-primary rounded-md">1</a>
+                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">2</a>
+                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">3</a>
+                        <a href="#" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50">Next</a>
+                    </nav>
+                </div>
+
+                <aside class="lg:w-1/3 mt-12 lg:mt-0 animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="sticky top-28">
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Search Insights</h3>
+                            <form action="#" method="GET" class="sidebar-search">
+                                <input type="search" name="q" placeholder="Search articles..." class="focus:ring-secondary focus:border-secondary">
+                                </form>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Categories</h3>
+                            <ul class="sidebar-list">
+                                <li><a href="#">USCIS Updates (4)</a></li>
+                                <li><a href="#">Policy Changes (6)</a></li>
+                                <li><a href="#">Visa Bulletin Info (2)</a></li>
+                                <li><a href="#">TPS Alerts (1)</a></li>
+                                <li><a href="#">DACA News (1)</a></li>
+                                <li><a href="#">Anti-Discrimination Law (0)</a> <li><a href="#">Firm News (0)</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Important Resources</h3>
+                             <ul class="sidebar-list">
+                                <li><a href="https://www.uscis.gov/" target="_blank" rel="noopener noreferrer">U.S. Citizenship & Immigration Services <i class="fas fa-external-link-alt fa-xs ml-1"></i></a></li>
+                                <li><a href="https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" target="_blank" rel="noopener noreferrer">Official Visa Bulletin <i class="fas fa-external-link-alt fa-xs ml-1"></i></a></li>
+                                <li><a href="https://www.justice.gov/eoir" target="_blank" rel="noopener noreferrer">Executive Office for Immigration Review <i class="fas fa-external-link-alt fa-xs ml-1"></i></a></li>
+                                <li><a href="https://www.dhs.gov/" target="_blank" rel="noopener noreferrer">Department of Homeland Security <i class="fas fa-external-link-alt fa-xs ml-1"></i></a></li>
+                            </ul>
+                        </div>
+                         <div class="sidebar-widget bg-primary text-white">
+                            <h3 class="sidebar-title" style="color:white; border-bottom-color: var(--color-secondary);">Need Specific Advice?</h3>
+                            <p class="text-sm mb-4 leading-relaxed">The information here is general. For advice tailored to your unique situation, please contact us.</p>
+                            <a href="contact.html" class="btn-primary bg-secondary text-primary w-full text-center">Schedule a Consultation</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                     <p class="text-sm mb-1">Phone: <a href="tel:1-703-273-1196" class="footer-link">(703) 273-1196</a></p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs">© 1995-<span id="current-year-insights"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonInsights = document.getElementById('mobile-menu-button-insights');
+        const mobileMenuInsights = document.getElementById('mobile-menu-insights');
+        if (mobileMenuButtonInsights && mobileMenuInsights) { 
+            mobileMenuButtonInsights.addEventListener('click', () => {
+                mobileMenuInsights.classList.toggle('hidden');
+            });
+             document.querySelectorAll('#mobile-menu-insights a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuInsights.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerInsights = document.getElementById('main-header');
+        let lastScrollTopInsights = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (headerInsights) { 
+                if (scrollTop > lastScrollTopInsights && scrollTop > 80) {
+                    headerInsights.style.top = '-150px'; 
+                } else { 
+                    headerInsights.style.top = '0'; 
+                }
+                if (scrollTop > 50) {
+                    headerInsights.classList.add('py-3', 'shadow-lg');
+                    headerInsights.classList.remove('py-4');
+                } else {
+                    headerInsights.classList.remove('py-3', 'shadow-lg');
+                    headerInsights.classList.add('py-4');
+                }
+            }
+            lastScrollTopInsights = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearInsightsEl = document.getElementById('current-year-insights');
+        if (currentYearInsightsEl) {
+            currentYearInsightsEl.textContent = new Date().getFullYear();
+        }
+
+        // Intersection Observer for animations
+        const animatedElementsInsights = document.querySelectorAll('.animate-fade-in');
+         if (typeof IntersectionObserver !== 'undefined') {
+            const observerInsights = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerInsights.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsInsights.forEach(el => {
+                observerInsights.observe(el);
+            });
+        } else { 
+            animatedElementsInsights.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>

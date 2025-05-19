@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Legal Services | Valera & Associates PC - Immigration & Anti-Discrimination</title>
+    <meta name="description" content="Explore the comprehensive immigration and anti-discrimination legal services offered by Valera & Associates PC. From removal defense to visas, citizenship, and civil rights.">
+    <meta name="keywords" content="Valera & Associates services, immigration practice areas, anti-discrimination practice areas, removal proceedings, non-immigrant visas, green cards, citizenship, employment immigration, family immigration, human rights law">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Inherit styles from the masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; /* Adjust if header height changes */
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-text-light: #F8F9FA;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+        .page-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://placehold.co/1920x500/003366/FFFFFF?text=Our+Areas+of+Expertise&font=Playfair+Display') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 6rem 0;
+        }
+        .page-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .service-category-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 51, 102, 0.07);
+            transition: all 0.3s ease;
+            border-left: 5px solid transparent;
+            display: flex; /* For flex-grow to work on description */
+            flex-direction: column; /* Stack items vertically */
+        }
+        .service-category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 51, 102, 0.1);
+            border-left-color: var(--color-secondary);
+        }
+        .service-category-title {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: 1.75rem; /* 28px */
+        }
+        .service-category-description {
+            color: #495057; /* Slightly lighter dark grey */
+            font-size: 0.95rem;
+            line-height: 1.6;
+            flex-grow: 1; /* Allows description to take available space */
+        }
+        .service-category-card .btn-primary {
+            margin-top: auto; /* Pushes button to the bottom */
+            align-self: flex-start; /* Aligns button to the left */
+        }
+        .section-title-display {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .section-subtitle {
+            font-size: clamp(1rem, 1.5vw, 1.2rem);
+            color: var(--color-text-dark);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .title-underline {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-secondary);
+            margin: 0.75rem auto 0;
+        }
+         /* Animations */
+         .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+        .animate-fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-secondary transition duration-300 font-bold">Services</a> <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a>
+                    <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-services" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-services" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Our Comprehensive Legal Services</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">Valera & Associates PC offers expert counsel across a wide spectrum of Immigration and Anti-Discrimination Law. Discover how we can assist you.</p>
+        </div>
+    </section>
+
+    <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <span class="text-gray-600">Our Services</span>
+        </div>
+    </div>
+
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 md:mb-20">
+                <h2 class="section-title-display font-display">Areas of Dedication & Expertise</h2>
+                <p class="section-subtitle mt-2">We are committed to providing specialized legal support tailored to your individual needs and circumstances across these critical areas:</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+                <div class="service-category-card p-8 animate-fade-in-up">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-gavel fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">I. Removal Proceedings</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Navigating the complexities of deportation defense with strategic representation in immigration court, covering withholding of removal, asylum, waivers, and more.</p>
+                    <a href="service-removal-defense.html" class="btn-primary text-sm">Explore Removal Defense</a>
+                </div>
+
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-balance-scale fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">II. BIA Appeals</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Expert appellate advocacy before the Board of Immigration Appeals, challenging unfavorable decisions and seeking justice.</p>
+                    <a href="service-bia-appeals.html" class="btn-primary text-sm">Learn About BIA Practice</a>
+                </div>
+
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.2s;">
+                     <div class="flex items-center mb-4">
+                        <i class="fas fa-landmark fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">III. Federal & Supreme Court</h3>
+                    </div>
+                    <p class="service-category-description mb-6">High-level representation in U.S. Federal Courts and the Supreme Court for impactful immigration-related cases.</p>
+                    <a href="service-federal-litigation.html" class="btn-primary text-sm">Federal Court Representation</a>
+                </div>
+                
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-passport fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">IV. Non-Immigrant Visas</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Comprehensive assistance for various temporary visas, including work (H, L, E, O, P), student (F-1), visitor (B1/B2), victim (U/T), and more.</p>
+                    <a href="service-non-immigrant-visas.html" class="btn-primary text-sm">Discover Visa Options</a>
+                </div>
+
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-id-card fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">V. Green Cards & Citizenship</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Guiding clients through the intricate process of obtaining lawful permanent residency (Green Card) and U.S. citizenship (Naturalization).</p>
+                    <a href="service-residency-citizenship.html" class="btn-primary text-sm">Your Path to Citizenship</a>
+                </div>
+                
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-briefcase fa-2x text-secondary mr-4"></i> 
+                        <h3 class="service-category-title">VI. Employment & Family Petitions</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Expertise in PERM labor certification, employment-based immigrant petitions, and family-sponsored immigration processes for spouses, children, and parents.</p>
+                    <a href="service-employment-family-petitions.html" class="btn-primary text-sm">Employment & Family Visas</a>
+                </div>
+
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-flag-usa fa-2x text-secondary mr-4"></i> 
+                        <h3 class="service-category-title">VII. Dual Citizenship Law</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Navigating the legal requirements for dual citizenship, with a focus on Philippines & United States nationality laws.</p>
+                    <a href="service-dual-citizenship.html" class="btn-primary text-sm">Explore Dual Citizenship</a>
+                </div>
+                
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.7s;">
+                     <div class="flex items-center mb-4">
+                        <i class="fas fa-globe-americas fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">VIII. International Trade & Contracts</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Providing legal counsel for international business transactions, contract drafting, and negotiation.</p>
+                    <a href="service-international-trade.html" class="btn-primary text-sm">International Business Law</a>
+                </div>
+
+                <div class="service-category-card p-8 animate-fade-in-up" style="animation-delay: 0.8s;">
+                     <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt fa-2x text-secondary mr-4"></i>
+                        <h3 class="service-category-title">IX-XI. Rights & Resolutions</h3>
+                    </div>
+                    <p class="service-category-description mb-6">Dedicated advocacy in Human Rights Law, Anti-Discrimination cases (employment, housing, etc.), and skilled Conflict & Dispute Resolution services.</p>
+                    <a href="service-rights-resolutions.html" class="btn-primary text-sm">Protecting Your Rights</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-20 md:py-24 bg-primary text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Unsure Which Service You Need?</h2>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                The legal landscape can be complex. Let us help you identify the best path forward. Schedule a confidential consultation with our experienced team.
+            </p>
+            <a href="contact.html" class="btn-primary text-lg bg-secondary text-primary hover:bg-yellow-300">Schedule a Consultation Today</a>
+        </div>
+    </section>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                    <p class="text-sm mb-1">Phone: <a href="tel:1-703-273-1196" class="footer-link" style="color: #adb5bd; transition: color 0.3s ease; font-size: 0.9rem;">(703) 273-1196</a></p>
+                    <p class="text-sm mb-1">Toll-Free: <a href="tel:1-877-427-6336" class="footer-link" style="color: #adb5bd; transition: color 0.3s ease; font-size: 0.9rem;">1-877-4AR-NEDO</a></p>
+                    <p class="text-sm">Email: <a href="mailto:consultation@valeralaw.com" class="footer-link" style="color: #adb5bd; transition: color 0.3s ease; font-size: 0.9rem;">consultation@valeralaw.com</a></p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Practice Areas</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="service-removal-proceedings.html" class="footer-link">Removal Defense</a></li>
+                        <li><a href="service-non-immigrant-visas.html" class="footer-link">Non-Immigrant Visas</a></li>
+                        <li><a href="service-residency-citizenship.html" class="footer-link">Green Cards & Citizenship</a></li>
+                        <li><a href="service-employment-family-petitions.html" class="footer-link">Employment & Family Petitions</a></li>
+                        <li><a href="service-rights-resolutions.html" class="footer-link">Anti-Discrimination & Human Rights</a></li>
+                        <li><a href="services.html" class="footer-link">View All Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html#approach" class="footer-link">Our Approach</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="client-stories.html" class="footer-link">Client Stories</a></li>
+                        <li><a href="legal-insights.html" class="footer-link">Legal Insights</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQs</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect With Us</h5>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" style="color: #adb5bd; font-size: 1.5rem; transition: color 0.3s ease, transform 0.3s ease;" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" style="color: #adb5bd; font-size: 1.5rem; transition: color 0.3s ease, transform 0.3s ease;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon" style="color: #adb5bd; font-size: 1.5rem; transition: color 0.3s ease, transform 0.3s ease;" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                    </div>
+                    <p class="text-sm">Office Hours: Mon-Fri, 9AM-5PM ET<br>Sat: By Appointment Only</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs mb-2 leading-relaxed">
+                    The information on this website is for general informational purposes only and not legal advice. Viewing this site or contacting us does not create an attorney-client relationship. Please do not send confidential information until such a relationship is formally established. Prior results do not guarantee similar outcomes.
+                </p>
+                <p class="text-xs">© 1995-<span id="current-year-services"></span> Law Offices of Valera & Associates PC. All Rights Reserved. Fairfax, VA.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonServices = document.getElementById('mobile-menu-button-services');
+        const mobileMenuServices = document.getElementById('mobile-menu-services');
+        if (mobileMenuButtonServices && mobileMenuServices) { 
+            mobileMenuButtonServices.addEventListener('click', () => {
+                mobileMenuServices.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-services a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (link.getAttribute('href').startsWith('#') || link.getAttribute('href').includes('.html')) { 
+                        mobileMenuServices.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerServices = document.getElementById('main-header');
+        let lastScrollTopServices = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (headerServices) { 
+                if (scrollTop > lastScrollTopServices && scrollTop > 80) {
+                    headerServices.style.top = '-150px'; 
+                } else { 
+                    headerServices.style.top = '0'; 
+                }
+                if (scrollTop > 50) {
+                    headerServices.classList.add('py-3', 'shadow-lg');
+                    headerServices.classList.remove('py-4');
+                } else {
+                    headerServices.classList.remove('py-3', 'shadow-lg');
+                    headerServices.classList.add('py-4');
+                }
+            }
+            lastScrollTopServices = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearServicesEl = document.getElementById('current-year-services');
+        if (currentYearServicesEl) {
+            currentYearServicesEl.textContent = new Date().getFullYear();
+        }
+        // Intersection Observer for animations
+        const animatedElementsServices = document.querySelectorAll('.animate-fade-in-up');
+        if (typeof IntersectionObserver !== 'undefined') {
+            const observerServices = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerServices.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsServices.forEach(el => {
+                observerServices.observe(el);
+            });
+        } else { 
+            animatedElementsServices.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding the Visa Bulletin | Valera & Associates PC</title>
+    <meta name="description" content="A guide by Valera & Associates PC to help you understand the U.S. Department of State's Visa Bulletin, including priority dates, final action dates, and dates for filing.">
+    <meta name="keywords" content="Visa Bulletin guide, how to read visa bulletin, priority date, final action dates, dates for filing, immigration lawyer Fairfax, Valera & Associates, visa processing times">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Inherit styles from masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-serif-body { font-family: 'Lora', serif; }
+
+        :root { /* Ensure CSS variables are available */
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .btn-primary { /* From main site */
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover { background-color: #c5a230; transform: translateY(-2px); }
+
+        .article-header {
+            background-color: var(--color-bg-subtle);
+            padding: 3rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .article-title-main {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3.2rem);
+            color: var(--color-primary);
+            line-height: 1.2;
+        }
+        .article-meta-info {
+            font-size: 0.9rem;
+            color: #6c757d; 
+        }
+        .article-meta-info span { margin-right: 1rem; }
+        .article-meta-info i { margin-right: 0.3rem; color: var(--color-accent); }
+        
+        .article-content {
+            font-family: 'Lora', serif; 
+            font-size: 1.1rem; 
+            line-height: 1.8;
+            color: #343a40;
+        }
+        .article-content h2, .article-content h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        .article-content h2 { font-size: 1.8rem; }
+        .article-content h3 { font-size: 1.5rem; }
+        .article-content p { margin-bottom: 1.25rem; }
+        .article-content ul, .article-content ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+        .article-content li { margin-bottom: 0.5rem; }
+        .article-content blockquote {
+            border-left: 4px solid var(--color-secondary);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #555;
+        }
+        .article-content a {
+            color: var(--color-secondary);
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+        .article-content a:hover { color: #c5a230; }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .social-share a {
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+        .social-share a:hover { color: var(--color-secondary); }
+        
+        .related-articles-title {
+             font-family: 'Playfair Display', serif;
+             color: var(--color-primary);
+             font-size: 1.75rem;
+             padding-bottom: 0.5rem;
+             border-bottom: 2px solid var(--color-secondary);
+             display: inline-block;
+             margin-bottom: 1.5rem;
+        }
+        /* Animations */
+        .animate-fade-in {
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a> 
+                    <a href="legal-insights.html" class="text-secondary transition duration-300 font-bold">Insights</a> <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-article-vb" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-article-vb" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="article-header">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="article-title-main mb-3">A Guide to Understanding the U.S. Visa Bulletin</h1>
+            <div class="article-meta-info">
+                <span><i class="fas fa-calendar-alt"></i> Published: <span class="dynamic-date-vb">[Current Date]</span></span>
+                <span><i class="fas fa-folder-open"></i> Category: Resource Guide, Immigration Process</span>
+                <span><i class="fas fa-user"></i> By: Valera & Associates PC</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-white py-3 shadow-sm">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <a href="legal-insights.html" class="text-primary hover:text-secondary">Legal Insights</a> &gt; 
+            <span class="text-gray-600">Visa Bulletin Guide</span>
+        </div>
+    </div>
+
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-xl policy-content animate-fade-in">
+                <article class="article-content">
+                    <p>For many individuals seeking to immigrate to the United States through family-sponsored or employment-based petitions, the Visa Bulletin is a critical monthly publication by the U.S. Department of State. It can seem complex, but understanding its basics is essential for knowing where you stand in the immigration process.</p>
+                    
+                    <img src="https://placehold.co/800x450/E9ECEF/6c757d?text=Visa+Bulletin+Charts&font=Manrope" alt="Visa Bulletin Information Graphic" class="my-8">
+
+                    <h2>What is the Visa Bulletin?</h2>
+                    <p>The U.S. Congress sets annual numerical limits on most immigrant visa categories. When demand for visas in a particular category or from a particular country exceeds the available supply, a waiting list, or backlog, forms. The Visa Bulletin is the official tool used to manage these waiting lists.</p>
+                    <p>It is typically updated around the middle of each month and provides information for the *following* month. Its primary purpose is to indicate when an immigrant visa is available to an applicant based on their specific situation.</p>
+
+                    <h3>Key Terms to Understand:</h3>
+                    <ul>
+                        <li><strong>Priority Date:</strong> This is generally the date your immigrant petition (e.g., Form I-130 for family-based or Form I-140 for employment-based) was filed with U.S. Citizenship and Immigration Services (USCIS). It establishes your "place in line." You can usually find this date on your petition approval notice (Form I-797).</li>
+                        <li><strong>Preference Category:</strong> Immigrant visas are divided into family-sponsored preference categories (F1, F2A, F2B, F3, F4) and employment-based preference categories (EB-1, EB-2, EB-3, EB-4, EB-5). Immediate relatives of U.S. citizens (spouses, unmarried children under 21, and parents of U.S. citizens 21 or older) are not subject to these numerical limits and do not need to check the Visa Bulletin for availability.</li>
+                        <li><strong>Country of Chargeability:</strong> This is usually your country of birth, not your country of citizenship or current residence. Some countries with high demand for U.S. visas (e.g., China, India, Mexico, Philippines) have separate columns in the Visa Bulletin charts due to per-country limits.</li>
+                        <li><strong>Cut-off Date:</strong> The dates listed in the Visa Bulletin charts are "cut-off dates." If your priority date is *earlier* than the cut-off date listed for your category and country, a visa is considered available, and you may be able to proceed with the next steps in your green card process.</li>
+                        <li><strong>"C" (Current):</strong> If the chart shows "C" for your category/country, it means there is no backlog, and visas are available for all qualified applicants in that category with any priority date.</li>
+                        <li><strong>"U" (Unavailable):</strong> If the chart shows "U," it means no visas are authorized for issuance in that category for that month.</li>
+                    </ul>
+
+                    <h2>Understanding the Charts: Final Action Dates vs. Dates for Filing</h2>
+                    <p>The Visa Bulletin typically includes two main charts for both family-sponsored and employment-based categories:</p>
+                    <ul>
+                        <li><strong>Chart A: Final Action Dates (Application Final Action Dates):</strong> This chart indicates when visas may finally be issued, or when adjustment of status applications may be approved. If your priority date is before the date listed on this chart, you are eligible for final processing of your immigrant visa or Green Card. USCIS typically indicates on its website whether applicants for adjustment of status should use this chart.</li>
+                        <li><strong>Chart B: Dates for Filing Applications:</strong> This chart indicates when applicants, who are physically outside the U.S. and will be applying through a U.S. consulate (consular processing), should submit their required documentation to the National Visa Center (NVC). For those in the U.S. applying for adjustment of status, USCIS will announce each month on its website (www.uscis.gov/visabulletininfo) whether they will accept applications based on the "Dates for Filing" chart or the "Final Action Dates" chart. If USCIS allows use of the "Dates for Filing" chart, you may be able to file your Form I-485 (Adjustment of Status) sooner, even if a visa is not yet immediately available for final approval.</li>
+                    </ul>
+                    
+                    <h3>How to Read the Visa Bulletin:</h3>
+                    <ol>
+                        <li>Identify your visa preference category (e.g., F1, F2B, EB-2, EB-3).</li>
+                        <li>Determine your country of chargeability (usually your country of birth).</li>
+                        <li>Find your priority date on your I-797 approval notice for your I-130 or I-140 petition.</li>
+                        <li>Locate the latest Visa Bulletin on the <a href="https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html" target="_blank" rel="noopener noreferrer">U.S. Department of State website</a>.</li>
+                        <li>Check the USCIS website (www.uscis.gov/visabulletininfo) to see which chart (Final Action Dates or Dates for Filing) to use for adjustment of status filings for the current month.</li>
+                        <li>Find your preference category in the appropriate chart and cross-reference it with your country of chargeability. Compare your priority date to the date listed.</li>
+                    </ol>
+                    
+                    <blockquote>
+                        "The Visa Bulletin can be intricate, and priority dates can sometimes move backward (retrogression) or stall. It's essential to monitor it regularly if your category is subject to backlogs."
+                    </blockquote>
+
+                    <p>Valera & Associates PC is experienced in interpreting the Visa Bulletin and advising clients on its implications for their specific cases. We can help you understand your place in line and when you may be eligible to take the next steps toward your Green Card.</p>
+                    
+                    <p><em>Disclaimer: This guide provides general information about the Visa Bulletin and is not legal advice. The Visa Bulletin is complex and subject to monthly changes. Always refer to the official U.S. Department of State Visa Bulletin and consult with a qualified immigration attorney for advice specific to your situation.</em></p>
+                </article>
+
+                <div class="mt-10 pt-6 border-t border-gray-200 text-center">
+                    <h4 class="font-display text-lg text-primary mb-3">Share This Guide:</h4>
+                    <div class="social-share">
+                        <a href="#" aria-label="Share on Facebook"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#" aria-label="Share on Twitter"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#" aria-label="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Email this article"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <section class="mt-16 md:mt-24">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="related-articles-title">You Might Also Be Interested In</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <p class="text-xs text-gray-500 mb-1">IMMIGRATION PROCESS</p>
+                        <h4 class="font-display text-primary text-lg mb-2"><a href="service-residency-citizenship.html" class="hover:text-secondary">Green Cards & U.S. Citizenship</a></h4>
+                        <p class="text-sm text-gray-600">Learn about pathways to permanent residency and naturalization...</p>
+                        <a href="service-residency-citizenship.html" class="text-sm text-secondary font-semibold mt-3 inline-block hover:text-primary">Read More &raquo;</a>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <p class="text-xs text-gray-500 mb-1">POLICY UPDATE</p>
+                        <h4 class="font-display text-primary text-lg mb-2"><a href="article-uscis-fee-injunction.html" class="hover:text-secondary">Impact of USCIS Fee Rule Injunction</a></h4>
+                        <p class="text-sm text-gray-600">Understanding the court's preliminary injunction on the USCIS Fee Schedule rule...</p>
+                        <a href="article-uscis-fee-injunction.html" class="text-sm text-secondary font-semibold mt-3 inline-block hover:text-primary">Read More &raquo;</a>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <p class="text-xs text-gray-500 mb-1">FAMILY IMMIGRATION</p>
+                        <h4 class="font-display text-primary text-lg mb-2"><a href="service-family-immigration.html" class="hover:text-secondary">Family-Based Immigration Petitions</a></h4>
+                        <p class="text-sm text-gray-600">Reuniting families through various petition processes...</p>
+                        <a href="service-family-immigration.html" class="text-sm text-secondary font-semibold mt-3 inline-block hover:text-primary">Read More &raquo;</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                 <p class="text-xs mb-2 leading-relaxed">The information on this website is for general informational purposes only and not legal advice. Please consult with a qualified attorney for advice regarding your specific situation.</p>
+                <p class="text-xs">© 1995-<span id="current-year-article-vb"></span> Law Offices of Valera & Associates PC. All Rights Reserved. Fairfax, VA.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Dynamic date for article meta
+        document.querySelectorAll('.dynamic-date-vb').forEach(el => {
+            const today = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            el.textContent = today.toLocaleDateString('en-US', options);
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButtonArticleVb = document.getElementById('mobile-menu-button-article-vb');
+        const mobileMenuArticleVb = document.getElementById('mobile-menu-article-vb');
+        if(mobileMenuButtonArticleVb && mobileMenuArticleVb) {
+            mobileMenuButtonArticleVb.addEventListener('click', () => {
+                mobileMenuArticleVb.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-article-vb a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuArticleVb.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerArticleVb = document.getElementById('main-header');
+        let lastScrollTopArticleVb = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(headerArticleVb){
+                if (scrollTop > lastScrollTopArticleVb && scrollTop > 80) { headerArticleVb.style.top = '-150px'; } 
+                else { headerArticleVb.style.top = '0'; }
+                if (scrollTop > 50) { headerArticleVb.classList.add('py-3', 'shadow-lg'); headerArticleVb.classList.remove('py-4'); } 
+                else { headerArticleVb.classList.remove('py-3', 'shadow-lg'); headerArticleVb.classList.add('py-4'); }
+            }
+            lastScrollTopArticleVb = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearArticleVbEl = document.getElementById('current-year-article-vb');
+        if(currentYearArticleVbEl){
+            currentYearArticleVbEl.textContent = new Date().getFullYear();
+        }
+        // Intersection Observer for animations
+        const animatedElementsArticleVb = document.querySelectorAll('.animate-fade-in');
+         if (typeof IntersectionObserver !== 'undefined') {
+            const observerArticleVb = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerArticleVb.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsArticleVb.forEach(el => {
+                observerArticleVb.observe(el);
+            });
+        } else {
+            animatedElementsArticleVb.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>

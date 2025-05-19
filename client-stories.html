@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Success Stories | Valera & Associates PC</title>
+    <meta name="description" content="Read testimonials and success stories from clients of Valera & Associates PC. Discover how we've helped individuals and families with their immigration and anti-discrimination cases.">
+    <meta name="keywords" content="Valera & Associates testimonials, client reviews, immigration success stories, anti-discrimination case results, lawyer reviews Fairfax VA">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Inherit styles from masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-text-light: #F8F9FA;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.8rem 2rem; 
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover { 
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+        /* Page-specific hero */
+        .page-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://placehold.co/1920x500/003366/FFFFFF?text=Voices+of+Our+Clients&font=Playfair+Display') no-repeat center center;
+            /* Replace with an image that evokes trust, success, or positive outcomes */
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 6rem 0;
+        }
+        .page-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .testimonial-card-full {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 51, 102, 0.1);
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; /* Default for smaller screens */
+            border-left: 6px solid var(--color-secondary);
+        }
+
+        .testimonial-content {
+            padding: 2rem 2.5rem;
+        }
+        .testimonial-quote-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .testimonial-text-full {
+            font-family: 'Lora', serif;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        .testimonial-author-full {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            font-weight: 700;
+            text-align: right;
+        }
+        .testimonial-author-full span {
+            display: block;
+            font-family: 'Manrope', sans-serif;
+            font-size: 0.9rem;
+            color: #777;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: 0.25rem;
+        }
+
+        /* Optional: Add styling for case result snippets if you include them */
+        .case-result-snippet {
+            background-color: var(--color-bg-subtle);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            border-left: 4px solid var(--color-accent);
+        }
+        .case-result-snippet h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        .case-result-snippet p {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        /* Animations */
+        .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a> 
+                    <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="client-stories.html" class="text-secondary transition duration-300 font-bold">Testimonials</a> <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-testimonials" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-testimonials" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="client-stories.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Testimonials</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Client Success Stories</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">Discover the real impact of our dedicated legal representation through the experiences of those we've served.</p>
+        </div>
+    </section>
+
+     <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <span class="text-gray-600">Client Success Stories</span>
+        </div>
+    </div>
+
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+
+                <div class="testimonial-card-full animate-fade-in-up">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left testimonial-quote-icon"></i>
+                        <p class="testimonial-text-full">
+                            "The Valera team navigated my extremely complex case with unparalleled expertise and genuine care. They secured a future for my family I didn't think was possible. Their strategic approach and constant communication were immensely reassuring throughout the entire process. I cannot recommend them highly enough."
+                        </p>
+                        <p class="testimonial-author-full">
+                            A. Rodriguez
+                            <span>Fairfax, VA - Immigration Case</span>
+                        </p>
+                        <div class="case-result-snippet">
+                            <h4>Case Highlight:</h4>
+                            <p>Successfully obtained a waiver of inadmissibility and adjustment of status for a client with a complex immigration history.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card-full animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left testimonial-quote-icon"></i>
+                        <p class="testimonial-text-full">
+                            "Facing deportation was terrifying. Rev. Valera and his associates were not just lawyers, but lifelines. Their deep knowledge of the law, combined with their unwavering commitment to my case, made all the difference. They fought tirelessly for me and achieved an outcome I am forever grateful for."
+                        </p>
+                        <p class="testimonial-author-full">
+                            B. Chen
+                            <span>Washington D.C. Metro Area - Removal Defense</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card-full animate-fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left testimonial-quote-icon"></i>
+                        <p class="testimonial-text-full">
+                            "I approached Valera & Associates regarding an employment discrimination issue. They were incredibly attentive, thorough, and provided clear guidance every step of the way. Their professionalism and dedication to justice were evident, and I felt truly supported."
+                        </p>
+                        <p class="testimonial-author-full">
+                            L. Williams
+                            <span>Arlington, VA - Anti-Discrimination Case</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16 animate-fade-in-up" style="animation-delay: 0.8s;">
+                    <p class="text-lg text-gray-700 mb-6">Your success is our priority. If you are facing a challenging legal situation, let us help you navigate the path forward.</p>
+                    <a href="contact.html" class="btn-primary text-lg">Schedule Your Consultation</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                     <p class="text-sm mb-1">Phone: <a href="tel:1-703-273-1196" class="footer-link">(703) 273-1196</a></p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon ml-3" aria-label="LinkedIn (Placeholder)"><i class="fab fa-linkedin"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs mb-2 leading-relaxed">
+                    Testimonials or endorsements do not constitute a guarantee, warranty, or prediction regarding the outcome of your legal matter. Prior results do not guarantee a similar outcome.
+                </p>
+                <p class="text-xs">© 1995-<span id="current-year-testimonials"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonTestimonials = document.getElementById('mobile-menu-button-testimonials');
+        const mobileMenuTestimonials = document.getElementById('mobile-menu-testimonials');
+        if(mobileMenuButtonTestimonials && mobileMenuTestimonials) {
+            mobileMenuButtonTestimonials.addEventListener('click', () => {
+                mobileMenuTestimonials.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-testimonials a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuTestimonials.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerTestimonials = document.getElementById('main-header');
+        let lastScrollTopTestimonials = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(headerTestimonials){
+                if (scrollTop > lastScrollTopTestimonials && scrollTop > 80) { headerTestimonials.style.top = '-150px'; } 
+                else { headerTestimonials.style.top = '0'; }
+                if (scrollTop > 50) { headerTestimonials.classList.add('py-3', 'shadow-lg'); headerTestimonials.classList.remove('py-4'); } 
+                else { headerTestimonials.classList.remove('py-3', 'shadow-lg'); headerTestimonials.classList.add('py-4'); }
+            }
+            lastScrollTopTestimonials = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearTestimonialsEl = document.getElementById('current-year-testimonials');
+        if(currentYearTestimonialsEl){
+            currentYearTestimonialsEl.textContent = new Date().getFullYear();
+        }
+
+        // Intersection Observer for animations
+        const animatedElementsTestimonials = document.querySelectorAll('.animate-fade-in-up');
+         if (typeof IntersectionObserver !== 'undefined') {
+            const observerTestimonials = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerTestimonials.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsTestimonials.forEach(el => {
+                observerTestimonials.observe(el);
+            });
+        } else {
+            animatedElementsTestimonials.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>

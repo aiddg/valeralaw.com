@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Valera & Associates PC - Common Legal Questions</title>
+    <meta name="description" content="Find answers to frequently asked questions about immigration law, anti-discrimination law, consultations, and working with Valera & Associates PC.">
+    <meta name="keywords" content="immigration FAQ, anti-discrimination FAQ, legal questions, Valera & Associates FAQ, consultation questions, attorney fees FAQ">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Global styles from masterpiece theme */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-text-light: #F8F9FA;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+         .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover { 
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+        /* Page-specific hero */
+        .page-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://placehold.co/1920x500/003366/FFFFFF?text=Frequently+Asked+Questions&font=Playfair+Display') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 6rem 0;
+        }
+        .page-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .section-title-display {
+            font-size: clamp(1.8rem, 3vw, 2.8rem); /* Slightly smaller for FAQ categories */
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+        }
+        .title-underline {
+            width: 70px;
+            height: 3px;
+            background-color: var(--color-secondary);
+            margin: 0.5rem 0 2rem 0; /* Aligned left under category title */
+        }
+        
+        /* FAQ Accordion Styling */
+        .faq-item details {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--color-bg-subtle);
+            transition: box-shadow 0.3s ease;
+        }
+        .faq-item details:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+        .faq-item summary {
+            padding: 1.25rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none; /* Remove default marker */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--color-primary);
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.1rem;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; } /* Chrome/Safari */
+        .faq-item summary::after {
+            content: '\f078'; /* Font Awesome chevron-down */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--color-secondary);
+            transition: transform 0.3s ease;
+            font-size: 0.9em;
+        }
+        .faq-item details[open] summary {
+            border-bottom: 1px solid var(--color-bg-subtle);
+            background-color: #fefcf5; /* Very light gold/cream when open - adjusted for subtlety */
+        }
+        .faq-item details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .faq-content {
+            padding: 1.5rem;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #343a40;
+        }
+        .faq-content p { margin-bottom: 0.75rem;}
+        .faq-content p:last-child { margin-bottom: 0;}
+        .faq-content a {
+            color: var(--color-secondary);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .faq-content a:hover {
+            color: #b38f29; /* Darker gold on hover */
+        }
+        
+        /* Animations */
+        .animate-fade-in {
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a> 
+                    <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-secondary transition duration-300 font-bold">FAQ</a> <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-faq" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-faq" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Frequently Asked Questions</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">Find answers to common questions about our services, processes, and legal areas we cover.</p>
+        </div>
+    </section>
+
+     <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <span class="text-gray-600">FAQ</span>
+        </div>
+    </div>
+
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            
+            <section id="faq-general" class="mb-16 animate-fade-in">
+                <h2 class="section-title-display font-display">General Questions</h2>
+                <div class="title-underline"></div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What kind of law does Valera & Associates PC practice?</summary>
+                        <div class="faq-content">
+                            <p>Valera & Associates PC specializes primarily in U.S. Immigration Law and Anti-Discrimination Law. We handle a wide range of cases within these fields, including removal defense, visas, green cards, citizenship, employment-based immigration, family-based petitions, human rights cases, and representation in discrimination matters.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>How do I schedule a consultation?</summary>
+                        <div class="faq-content">
+                            <p>You can schedule a consultation by calling our office at (703) 273-1196 or by filling out the contact form on our <a href="contact.html">Contact Us</a> page. We offer consultations via phone, video conference, or email, especially considering current safety protocols.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What is the fee for an initial consultation?</summary>
+                        <div class="faq-content">
+                            <p>Our initial consultation fee is $250 for up to one hour. This fee will be credited towards your total legal fees if you decide to retain our firm's services for your case.</p>
+                        </div>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary>What information should I prepare for my initial consultation?</summary>
+                        <div class="faq-content">
+                            <p>For your initial consultation, please gather all relevant documents related to your case. This may include passports, visas, any notices received from immigration authorities (like a Notice to Appear - NTA), previous applications filed, correspondence with government agencies, and any evidence supporting your case. Having these documents readily available will help us provide you with a more thorough and accurate assessment of your situation.</p>
+                        </div>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary>What are your office hours?</summary>
+                        <div class="faq-content">
+                            <p>Our office hours are Monday to Friday, from 9:00 AM to 5:00 PM Eastern Time. Saturday appointments are available by special arrangement only. We are closed on major public holidays.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <section id="faq-immigration" class="mb-16 animate-fade-in" style="animation-delay: 0.2s;">
+                <h2 class="section-title-display font-display">Immigration Law</h2>
+                <div class="title-underline"></div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What is the difference between a non-immigrant visa and an immigrant visa (green card)?</summary>
+                        <div class="faq-content">
+                            <p>A non-immigrant visa allows you to enter the U.S. for a temporary period and for a specific purpose (e.g., tourism, study, temporary work). An immigrant visa (which leads to a Green Card) allows you to live and work permanently in the United States.</p>
+                             <p>For more details, please see our <a href="service-non-immigrant-visas.html">Non-Immigrant Visas</a> and <a href="service-residency-citizenship.html">Green Cards & Citizenship</a> pages.</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What is "Removal Proceedings" or "Deportation"?</summary>
+                        <div class="faq-content">
+                            <p>Removal proceedings are formal legal actions taken by the U.S. government to determine if a foreign national should be removed (deported) from the United States. These typically occur in immigration court before an Immigration Judge. Common reasons include visa overstays, criminal convictions, or unlawful entry.</p>
+                            <p>If you are facing removal, it's critical to seek experienced legal representation immediately. Visit our <a href="service-removal-proceedings.html">Removal & Deportation Defense</a> page for more information.</p>
+                        </div>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary>How long does the U.S. immigration process typically take?</summary>
+                        <div class="faq-content">
+                            <p>Processing times for immigration applications vary widely depending on the type of application, the specific USCIS office or consulate handling the case, current backlogs, and the individual circumstances of the case. Some processes may take a few months, while others can take several years. We can provide a more specific estimate during your consultation once we understand your case details.</p>
+                        </div>
+                    </details>
+                </div>
+                </section>
+
+            <section id="faq-anti-discrimination" class="mb-16 animate-fade-in" style="animation-delay: 0.4s;">
+                <h2 class="section-title-display font-display">Anti-Discrimination Law</h2>
+                <div class="title-underline"></div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What types of discrimination do you handle?</summary>
+                        <div class="faq-content">
+                            <p>We handle various forms of unlawful discrimination, including but not limited to discrimination based on race, color, national origin, religion, sex (including gender identity and sexual orientation), age, and disability. This can occur in areas such as employment, housing, education, and public accommodations.</p>
+                            <p>Learn more on our <a href="service-anti-discrimination.html">Anti-Discrimination & Civil Rights</a> page (assuming this page exists or will be created).</p>
+                        </div>
+                    </details>
+                </div>
+                <div class="faq-item">
+                    <details>
+                        <summary>What should I do if I believe I've been discriminated against?</summary>
+                        <div class="faq-content">
+                            <p>If you believe you have been subjected to unlawful discrimination, it's important to document everything: dates, times, locations, individuals involved, specific actions or statements, and any witnesses. Contacting an attorney promptly is also crucial, as there are often strict deadlines (statutes of limitations) for filing discrimination claims.</p>
+                        </div>
+                    </details>
+                </div>
+                 <div class="faq-item">
+                    <details>
+                        <summary>Are there time limits for filing a discrimination claim?</summary>
+                        <div class="faq-content">
+                            <p>Yes, there are strict time limits, known as statutes of limitations, for filing discrimination claims. These deadlines vary depending on the type of discrimination and the specific laws that apply (federal, state, or local). It is crucial to consult with an attorney as soon as possible to ensure you do not miss these important deadlines.</p>
+                        </div>
+                    </details>
+                </div>
+                </section>
+
+            <section class="text-center mt-16 animate-fade-in" style="animation-delay: 0.6s;">
+                <h3 class="font-display text-2xl text-primary mb-4">Still Have Questions?</h3>
+                <p class="text-gray-700 mb-6 max-w-xl mx-auto">The information provided here is general in nature. For advice specific to your situation, please don't hesitate to reach out to our experienced legal team.</p>
+                <a href="contact.html" class="btn-primary text-lg">Contact Us for Assistance</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                     <p class="text-sm mb-1">Phone: <a href="tel:1-703-273-1196" class="footer-link">(703) 273-1196</a></p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="legal-insights.html" class="footer-link">Insights</a></li>
+                        <li><a href="careers.html" class="footer-link">Careers</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon ml-3" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs mb-2 leading-relaxed">
+                    FAQ content is for informational purposes only and does not constitute legal advice. Always consult with a qualified attorney for advice regarding your individual situation.
+                </p>
+                <p class="text-xs">© 1995-<span id="current-year-faq"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonFaq = document.getElementById('mobile-menu-button-faq');
+        const mobileMenuFaq = document.getElementById('mobile-menu-faq');
+        if(mobileMenuButtonFaq && mobileMenuFaq) {
+            mobileMenuButtonFaq.addEventListener('click', () => {
+                mobileMenuFaq.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-faq a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuFaq.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerFaq = document.getElementById('main-header');
+        let lastScrollTopFaq = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(headerFaq){
+                if (scrollTop > lastScrollTopFaq && scrollTop > 80) { headerFaq.style.top = '-150px'; } 
+                else { headerFaq.style.top = '0'; }
+                if (scrollTop > 50) { headerFaq.classList.add('py-3', 'shadow-lg'); headerFaq.classList.remove('py-4'); } 
+                else { headerFaq.classList.remove('py-3', 'shadow-lg'); headerFaq.classList.add('py-4'); }
+            }
+            lastScrollTopFaq = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearFaqEl = document.getElementById('current-year-faq');
+        if(currentYearFaqEl){
+            currentYearFaqEl.textContent = new Date().getFullYear();
+        }
+
+        // Intersection Observer for animations
+        const animatedElementsFaq = document.querySelectorAll('.animate-fade-in');
+         if (typeof IntersectionObserver !== 'undefined') {
+            const observerFaq = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerFaq.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsFaq.forEach(el => {
+                observerFaq.observe(el);
+            });
+        } else {
+            animatedElementsFaq.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Rights, Anti-Discrimination & Conflict Resolution | Valera & Associates PC</title>
+    <meta name="description" content="Valera & Associates PC champions human rights, fights unlawful discrimination, and provides skilled conflict and dispute resolution services. Protecting your fundamental rights and seeking just outcomes.">
+    <meta name="keywords" content="human rights lawyer, anti-discrimination attorney, conflict resolution, dispute resolution, civil rights lawyer Fairfax, Valera & Associates, mediation, negotiation">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Inherit styles from masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-serif-body { font-family: 'Lora', serif; }
+
+        :root { 
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .page-hero-service {
+            background: linear-gradient(rgba(0, 51, 102, 0.88), rgba(0, 51, 102, 0.78)), url('https://placehold.co/1920x450/002244/FFFFFF?text=Upholding+Rights+%26+Seeking+Resolution&font=Playfair+Display') no-repeat center center;
+            /* Replace with an image symbolizing justice, advocacy, or peaceful resolution */
+            background-size: cover;
+            padding: 5rem 0;
+        }
+        .page-title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+
+        .content-section { padding: 2rem 0; }
+        .content-section h2.section-heading {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-secondary);
+            display: inline-block;
+        }
+         .content-section h3.sub-heading {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-accent);
+            font-size: clamp(1.4rem, 2.5vw, 1.8rem); 
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .content-section p, .content-section li {
+            font-family: 'Lora', serif;
+            font-size: 1.05rem;
+            line-height: 1.8; 
+            color: #343a40;
+            margin-bottom: 1rem;
+        }
+        .content-section ul.service-list { list-style: none; padding-left: 0; }
+        .content-section ul.service-list li {
+            position: relative;
+            padding-left: 30px; 
+            margin-bottom: 0.75rem;
+            font-size: 1.1rem; 
+        }
+        .content-section ul.service-list li::before {
+            content: '\f058'; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 7px; 
+            font-size: 1rem;
+        }
+        .content-section ul.service-list li strong {
+            color: var(--color-primary);
+            font-weight: 600;
+        }
+        .content-section .service-list ul { 
+            list-style: circle;
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+        }
+        .content-section .service-list ul li::before {
+            content: ''; 
+        }
+         .content-section .service-list ul li {
+            font-size: 1rem; 
+            padding-left: 0;
+        }
+
+        /* FAQ Accordion Styling */
+        .faq-item details {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--color-bg-subtle);
+        }
+        .faq-item summary {
+            padding: 1.25rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--color-primary);
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.1rem;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; } 
+        .faq-item summary::after {
+            content: '\f078'; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--color-secondary);
+            transition: transform 0.3s ease;
+            font-size: 0.9em;
+        }
+        .faq-item details[open] summary {
+            border-bottom: 1px solid var(--color-bg-subtle);
+            background-color: #fefcf5; 
+        }
+        .faq-item details[open] summary::after {
+            transform: rotate(180deg);
+        }
+        .faq-content {
+            padding: 1.25rem 1.5rem; 
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #343a40;
+            font-family: 'Lora', serif;
+        }
+        .faq-content p { margin-bottom: 0.75rem;}
+        .faq-content p:last-child { margin-bottom: 0;}
+        .faq-content a {
+            color: var(--color-secondary);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+         /* Animations */
+         .animate-fade-in {
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-secondary transition duration-300 font-bold">Services</a> <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a> 
+                    <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-rights" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-rights" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero-service text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Human Rights, Anti-Discrimination & Conflict Resolution</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">Dedicated legal advocacy for upholding fundamental rights, combating injustice, and achieving fair resolutions.</p>
+        </div>
+    </section>
+
+    <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <a href="services.html" class="text-primary hover:text-secondary">Our Services</a> &gt; 
+            <span class="text-gray-600">Rights & Resolutions</span>
+        </div>
+    </div>
+
+    <main class="py-12 md:py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2 animate-fade-in">
+                    <section class="content-section mb-12">
+                        <h2 class="section-heading">Championing Fairness and Fundamental Freedoms</h2>
+                        <p>At Valera & Associates PC, we are profoundly committed to the principles of justice, equality, and human dignity. Our practice in Human Rights Law, Anti-Discrimination Law, and Conflict & Dispute Resolution is dedicated to protecting individuals from unfair treatment, upholding their fundamental rights, and finding equitable solutions to complex disagreements.</p>
+                        <p>We understand that these matters often involve sensitive and deeply personal issues. Our approach combines vigorous legal advocacy with compassionate client support, ensuring your voice is heard and your rights are staunchly defended.</p>
+                    </section>
+
+                    <section class="content-section mb-12">
+                        <h3 class="sub-heading">Human Rights Law</h3>
+                        <p>Our human rights practice focuses on advocating for individuals whose basic rights and freedoms have been violated. This can intersect significantly with our immigration practice, particularly in cases involving:</p>
+                        <ul class="service-list">
+                            <li><strong>Asylum & Refugee Claims:</strong> Representing individuals fleeing persecution based on race, religion, nationality, political opinion, or membership in a particular social group.</li>
+                            <li><strong>Convention Against Torture (CAT) Protection:</strong> Seeking protection for those who fear torture if returned to their home country.</li>
+                            <li><strong>Victim-Based Visas (U & T Visas):</strong> Assisting victims of serious crimes and human trafficking in obtaining legal status and protection in the U.S.</li>
+                            <li>Advocacy against arbitrary detention and other violations of internationally recognized human rights standards.</li>
+                        </ul>
+                    </section>
+
+                    <section class="content-section mb-12">
+                        <h3 class="sub-heading">Anti-Discrimination Law</h3>
+                        <p>We fight against unlawful discrimination in various aspects of life. Our firm is prepared to represent clients who have faced discrimination based on protected characteristics such as:</p>
+                        <ul class="service-list">
+                            <li><strong>Race, Color, or National Origin</strong></li>
+                            <li><strong>Religion</strong></li>
+                            <li><strong>Sex (including pregnancy, gender identity, and sexual orientation)</strong></li>
+                            <li><strong>Age (40 and older)</strong></li>
+                            <li><strong>Disability (physical or mental)</strong></li>
+                            <li><strong>Genetic Information</strong></li>
+                        </ul>
+                        <p>We address discrimination in contexts including, but not limited to:</p>
+                        <ul class="service-list">
+                            <li><strong>Employment:</strong> Unfair hiring practices, wrongful termination, harassment, unequal pay, denial of promotion or reasonable accommodations.</li>
+                            <li><strong>Housing:</strong> Discrimination in rental, sale, or financing of housing.</li>
+                            <li><strong>Public Accommodations:</strong> Denial of equal access to services, goods, and facilities open to the public.</li>
+                            <li><strong>Education:</strong> Discriminatory practices within educational institutions.</li>
+                        </ul>
+                         <p>Our services include advising clients of their rights, filing complaints with relevant agencies (like the EEOC or HUD), negotiation, mediation, and litigation when necessary.</p>
+                    </section>
+                    
+                    <section class="content-section mb-12">
+                        <h3 class="sub-heading">Conflict & Dispute Resolution</h3>
+                        <p>Valera & Associates PC also provides services in conflict and dispute resolution. We aim to help parties find amicable and effective solutions to disagreements, potentially avoiding costly and lengthy litigation. Our approaches include:</p>
+                        <ul class="service-list">
+                            <li><strong>Negotiation:</strong> Direct discussions between parties (or their counsel) to reach a mutual agreement.</li>
+                            <li><strong>Mediation:</strong> Facilitating discussions with the help of a neutral third-party mediator to help parties find common ground and craft their own solutions.</li>
+                            <li><strong>Arbitration (Advisory):</strong> Presenting a case to a neutral arbitrator who provides a non-binding or binding decision, depending on the agreement of the parties.</li>
+                            <li>Early case assessment and strategic advice on the most appropriate dispute resolution method for your specific situation.</li>
+                        </ul>
+                        <p>Our goal is to achieve resolutions that are fair, efficient, and aligned with our clients' best interests, whether in immigration-related disputes, contractual disagreements, or other civil matters.</p>
+                    </section>
+                </div>
+
+                <aside class="lg:col-span-1 animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="sticky top-28"> 
+                        <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200 mb-8">
+                            <h3 class="font-display text-2xl text-primary mb-4">Protect Your Rights, Find Resolution</h3>
+                            <p class="text-sm text-gray-600 mb-6">If you've faced discrimination, human rights violations, or need assistance resolving a dispute, our firm is ready to help. Contact us for a confidential consultation.</p>
+                            <a href="contact.html" class="btn-primary w-full text-center">Consult Our Rights Advocates</a>
+                            <p class="text-xs text-center mt-3 text-gray-500">Consultation Fee: $250 (credited if retained)</p>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-lg shadow-lg border border-gray-200">
+                            <h3 class="font-display text-2xl text-primary mb-6 text-center">Common Questions</h3>
+                            <div class="faq-item">
+                                <details>
+                                    <summary>What constitutes unlawful discrimination in employment?</summary>
+                                    <div class="faq-content">
+                                        <p class="text-sm text-gray-600">Unlawful employment discrimination occurs when an employer takes an adverse action (e.g., not hiring, firing, demoting, harassing) against an employee or applicant based on their race, color, religion, sex, national origin, age (40+), disability, or other protected characteristics.</p>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="faq-item">
+                                <details>
+                                    <summary>What is the first step if I believe my human rights have been violated?</summary>
+                                    <div class="faq-content">
+                                        <p class="text-sm text-gray-600">Document all details of the incident(s), including dates, times, locations, individuals involved, and any evidence. Then, consult with an experienced human rights attorney to understand your legal options and the best course of action.</p>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="faq-item">
+                                <details>
+                                    <summary>How does mediation differ from going to court?</summary>
+                                    <div class="faq-content">
+                                        <p class="text-sm text-gray-600">Mediation is a voluntary process where a neutral third party helps disputing parties reach their own agreement. It's generally less formal, quicker, and less expensive than litigation (going to court), where a judge or jury makes a binding decision.</p>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="faq.html#rights-resolutions" class="text-sm text-secondary hover:text-primary font-semibold">More FAQs &raquo;</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs">© 1995-<span id="current-year-rights"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonRights = document.getElementById('mobile-menu-button-rights');
+        const mobileMenuRights = document.getElementById('mobile-menu-rights');
+        if(mobileMenuButtonRights && mobileMenuRights) {
+            mobileMenuButtonRights.addEventListener('click', () => {
+                mobileMenuRights.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-rights a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuRights.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerRights = document.getElementById('main-header');
+        let lastScrollTopRights = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(headerRights){
+                if (scrollTop > lastScrollTopRights && scrollTop > 80) { headerRights.style.top = '-150px'; } 
+                else { headerRights.style.top = '0'; }
+                if (scrollTop > 50) { headerRights.classList.add('py-3', 'shadow-lg'); headerRights.classList.remove('py-4'); } 
+                else { headerRights.classList.remove('py-3', 'shadow-lg'); headerRights.classList.add('py-4'); }
+            }
+            lastScrollTopRights = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearRightsEl = document.getElementById('current-year-rights');
+        if(currentYearRightsEl){
+            currentYearRightsEl.textContent = new Date().getFullYear();
+        }
+
+        // Intersection Observer for animations
+        const animatedElementsRights = document.querySelectorAll('.animate-fade-in');
+         if (typeof IntersectionObserver !== 'undefined') {
+            const observerRights = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerRights.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsRights.forEach(el => {
+                observerRights.observe(el);
+            });
+        } else {
+            animatedElementsRights.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>

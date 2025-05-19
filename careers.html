@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Valera & Associates PC - Join Our Team</title>
+    <meta name="description" content="Explore career opportunities at Valera & Associates PC. We seek dedicated legal professionals passionate about immigration and anti-discrimination law.">
+    <meta name="keywords" content="Valera & Associates careers, legal jobs Fairfax, immigration lawyer jobs, anti-discrimination attorney positions, legal careers Virginia">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Global styles from masterpiece theme */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-text-light: #F8F9FA;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover {
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+        /* Page-specific hero */
+        .page-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.75)), url('https://placehold.co/1920x500/003366/FFFFFF?text=Join+Our+Esteemed+Team&font=Playfair+Display') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 6rem 0;
+        }
+        .page-title {
+            font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+            line-height: 1.1;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        .content-section { padding: 2rem 0; }
+        .content-section h2.section-heading {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-secondary);
+            display: inline-block;
+        }
+        .content-section p, .content-section li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #343a40;
+            margin-bottom: 1rem;
+        }
+         /* Animations */
+         .animate-fade-in {
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+        }
+        .value-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0, 51, 102, 0.07);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 51, 102, 0.1);
+        }
+        .value-card i {
+            color: var(--color-secondary);
+            margin-bottom: 1rem;
+        }
+        .value-card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Our Team</a> 
+                    <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-secondary transition duration-300 font-bold">Careers</a> <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-careers" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-careers" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="page-hero text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="page-title font-display font-bold">Careers at Valera & Associates</h1>
+            <p class="text-lg md:text-xl mt-4 max-w-2xl mx-auto">Join a team dedicated to making a difference in the lives of individuals and families through expert legal advocacy.</p>
+        </div>
+    </section>
+
+    <div class="bg-bg-subtle py-3">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <span class="text-gray-600">Careers</span>
+        </div>
+    </div>
+
+    <main class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto">
+                <section class="content-section mb-12 text-center animate-fade-in">
+                    <h2 class="section-heading">Join Our Mission</h2>
+                    <p>Valera & Associates PC is a distinguished law firm specializing in immigration and anti-discrimination law. For over three decades, we have been committed to providing exceptional legal services with compassion, integrity, and a deep understanding of the complexities our clients face. Our firm fosters a collaborative environment where dedication to justice and client advocacy are paramount.</p>
+                    <p>We believe in empowering our team members, offering opportunities for growth, and making a meaningful impact in our community and beyond.</p>
+                </section>
+
+                <section class="content-section mb-12 animate-fade-in" style="animation-delay: 0.2s;">
+                    <h2 class="section-heading text-center">Why Work With Us?</h2>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div class="value-card">
+                            <i class="fas fa-balance-scale fa-3x"></i>
+                            <h3>Meaningful Work</h3>
+                            <p class="text-sm text-gray-600">Contribute to cases that change lives and uphold fundamental rights in immigration and anti-discrimination law.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-users fa-3x"></i>
+                            <h3>Collaborative Culture</h3>
+                            <p class="text-sm text-gray-600">Be part of a supportive and dynamic team that values diverse perspectives and shared success.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-chart-line fa-3x"></i>
+                            <h3>Professional Growth</h3>
+                            <p class="text-sm text-gray-600">We are committed to the development of our team, offering mentorship and opportunities to expand your expertise.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-hands-helping fa-3x"></i>
+                            <h3>Client-Centered Focus</h3>
+                            <p class="text-sm text-gray-600">Join us in providing compassionate, dedicated service that truly makes a difference for our clients.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section mb-12 bg-white p-8 rounded-lg shadow-lg animate-fade-in" style="animation-delay: 0.4s;">
+                    <h2 class="section-heading text-center">Current Opportunities</h2>
+                    <div class="text-center py-8">
+                        <i class="fas fa-search-minus fa-4x text-gray-400 mb-4"></i>
+                        <p class="text-xl font-semibold text-primary mb-2">Thank You for Your Interest</p>
+                        <p class="text-gray-700">We are not actively hiring for specific roles at this moment. However, Valera & Associates PC is always keen to connect with talented and passionate legal professionals, including attorneys, paralegals, and support staff, who are dedicated to excellence in immigration and anti-discrimination law.</p>
+                        <p class="mt-4 text-gray-700">If you believe your skills and commitment align with our firm's mission, we encourage you to submit your resume and a cover letter for future consideration to:</p>
+                        <p class="mt-4">
+                            <a href="mailto:careers@valeralaw.com" class="btn-primary text-base inline-flex items-center">
+                                <i class="fas fa-envelope mr-2"></i> Submit Your Resume
+                            </a>
+                        </p>
+                        <p class="mt-2 text-sm text-gray-500">(Please use "Future Consideration: [Your Name]" as the subject line.)</p>
+                        <p class="mt-6 text-gray-700">We will keep your information on file and reach out if a suitable opportunity arises.</p>
+                    </div>
+                </section>
+                
+                <section class="content-section text-center animate-fade-in" style="animation-delay: 0.6s;">
+                    <h2 class="section-heading">Our Commitment to Diversity & Inclusion</h2>
+                    <p>Valera & Associates PC is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate on the basis of race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, or any other legally protected status.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                    <p class="text-sm mb-1">Phone: <a href="tel:1-703-273-1196" class="footer-link" style="color: #adb5bd; transition: color 0.3s ease; font-size: 0.9rem;">(703) 273-1196</a></p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Our Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" style="color: #adb5bd; font-size: 1.5rem; transition: color 0.3s ease, transform 0.3s ease;" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs mb-2 leading-relaxed">
+                    The information on this website is for general informational purposes only and not legal advice. Viewing this site or contacting us does not create an attorney-client relationship.
+                </p>
+                <p class="text-xs">© 1995-<span id="current-year-careers"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonCareers = document.getElementById('mobile-menu-button-careers');
+        const mobileMenuCareers = document.getElementById('mobile-menu-careers');
+        if (mobileMenuButtonCareers && mobileMenuCareers) {
+            mobileMenuButtonCareers.addEventListener('click', () => {
+                mobileMenuCareers.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-careers a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuCareers.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header 
+        const headerCareers = document.getElementById('main-header');
+        let lastScrollTopCareers = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (headerCareers) {
+                if (scrollTop > lastScrollTopCareers && scrollTop > 80) { headerCareers.style.top = '-150px'; } 
+                else { headerCareers.style.top = '0'; }
+                if (scrollTop > 50) { headerCareers.classList.add('py-3', 'shadow-lg'); headerCareers.classList.remove('py-4'); } 
+                else { headerCareers.classList.remove('py-3', 'shadow-lg'); headerCareers.classList.add('py-4'); }
+            }
+            lastScrollTopCareers = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearCareersEl = document.getElementById('current-year-careers');
+        if(currentYearCareersEl) {
+            currentYearCareersEl.textContent = new Date().getFullYear();
+        }
+        // Intersection Observer for animations
+        const animatedElementsCareers = document.querySelectorAll('.animate-fade-in');
+        if (typeof IntersectionObserver !== 'undefined') {
+            const observerCareers = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerCareers.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsCareers.forEach(el => {
+                observerCareers.observe(el);
+            });
+        } else {
+            animatedElementsCareers.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>
