@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frances Klaire C. Garcia | Associate Attorney | Valera & Associates PC</title>
+    <meta name="description" content="Profile of Frances Klaire C. Garcia, Associate Attorney at Valera & Associates PC, specializing in Immigration Law. LLM from George Washington University.">
+    <meta name="keywords" content="Frances Klaire C. Garcia, Valera & Associates, immigration lawyer, associate attorney Fairfax, George Washington University Law, NY Bar, Philippine Bar">
+    
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Lora:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Inherit styles from masterpiece homepage (variables, base styles) */
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #F8F9FA;
+            color: #212529;
+            padding-top: 88px; 
+            overflow-x: hidden;
+        }
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-serif-body { font-family: 'Lora', serif; }
+
+        :root {
+            --color-primary: #003366;
+            --color-secondary: #D4AF37;
+            --color-accent: #B08D57;
+            --color-text-dark: #212529;
+            --color-bg-light: #F8F9FA;
+            --color-bg-subtle: #E9ECEF;
+        }
+        .bg-primary { background-color: var(--color-primary); }
+        .text-primary { color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .text-secondary { color: var(--color-secondary); }
+        .border-secondary { border-color: var(--color-secondary); }
+
+        .btn-primary {
+            background-color: var(--color-secondary);
+            color: var(--color-primary);
+            padding: 0.7rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        .btn-primary:hover { 
+            background-color: #c5a230;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
+        }
+        
+        .attorney-hero {
+            background-color: var(--color-bg-subtle);
+            padding: 4rem 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .attorney-name {
+            font-size: clamp(2rem, 4.5vw, 3.5rem);
+            line-height: 1.1;
+        }
+        .attorney-title {
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            color: var(--color-secondary);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .attorney-headshot {
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .content-section { padding: 2rem 0; }
+        .content-section h2.section-heading, .content-section h3.sub-heading {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        h2.section-heading {
+            font-size: clamp(1.8rem, 3vw, 2.2rem);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--color-secondary);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+        h3.sub-heading {
+            font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+            color: var(--color-accent);
+        }
+
+        .bio-text p, .bio-text li {
+            font-family: 'Lora', serif;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #343a40;
+            margin-bottom: 1.25rem;
+        }
+        .bio-text ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .bio-text ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0.5rem;
+        }
+        .bio-text ul li::before {
+            content: '\f00c'; /* Font Awesome check */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--color-secondary);
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+        
+        .sidebar-widget {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border: 1px solid var(--color-bg-subtle);
+        }
+        .sidebar-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            color: var(--color-primary);
+            margin-bottom: 1rem;
+        }
+        .sidebar-list li a {
+            color: var(--color-text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+            display: block;
+            padding: 0.4rem 0;
+        }
+        .sidebar-list li a:hover { color: var(--color-secondary); }
+
+        /* Animations */
+        .animate-fade-in {
+            opacity: 0;
+            transition: opacity 0.7s ease-out;
+        }
+        .animate-fade-in.is-visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-bg-light">
+
+    <header id="main-header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="font-display text-3xl font-bold text-primary">
+                    Valera & Associates <span class="text-secondary">PC</span>
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Services</a> 
+                    <a href="our-team.html" class="text-secondary transition duration-300 font-bold">Our Team</a> <a href="legal-insights.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Insights</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">Careers</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-secondary transition duration-300 font-medium">FAQ</a>
+                    <a href="contact.html" class="btn-primary text-sm">Schedule Consultation</a>
+                </nav>
+                <div class="lg:hidden">
+                    <button id="mobile-menu-button-attorney-garcia" aria-label="Open Menu" class="text-primary focus:outline-none">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-attorney-garcia" class="hidden lg:hidden absolute top-full left-0 right-0 bg-white shadow-xl py-3 z-30">
+            <a href="index.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Home</a>
+            <a href="services.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Services</a>
+            <a href="our-team.html" class="block px-6 py-3 text-secondary bg-gray-100 font-semibold">Our Team</a>
+            <a href="legal-insights.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Insights</a>
+            <a href="careers.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">Careers</a>
+            <a href="faq.html" class="block px-6 py-3 text-gray-700 hover:bg-gray-100 hover:text-secondary transition duration-300">FAQ</a>
+            <a href="contact.html" class="block mx-6 my-3 btn-primary text-center text-sm">Schedule Consultation</a>
+        </div>
+    </header>
+
+    <section class="attorney-hero">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="attorney-name font-display font-bold text-primary">Frances Klaire C. Garcia, Esq.</h1>
+            <p class="attorney-title mt-1">Associate Attorney</p>
+        </div>
+    </section>
+
+    <div class="bg-white py-3 shadow-sm">
+        <div class="container mx-auto px-6 text-sm">
+            <a href="index.html" class="text-primary hover:text-secondary">Home</a> &gt; 
+            <a href="our-team.html" class="text-primary hover:text-secondary">Our Team</a> &gt; 
+            <span class="text-gray-600">Frances Klaire C. Garcia</span>
+        </div>
+    </div>
+    
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex lg:space-x-12">
+                <div class="lg:w-2/3 animate-fade-in">
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start mb-8">
+                        <img src="https://placehold.co/200x200/004080/FFFFFF?text=F.K.G&font=Playfair+Display" alt="Frances Klaire C. Garcia" class="attorney-headshot mb-6 sm:mb-0 sm:mr-8">
+                        <div>
+                            <h2 class="font-display text-2xl text-primary mb-2">About Frances Klaire C. Garcia</h2>
+                            <p class="bio-text text-gray-700 leading-relaxed">
+                                Frances Klaire C. Garcia is a dedicated Associate Attorney at Valera & Associates PC, bringing a strong academic background and a passion for immigration law to her practice. Inspired by her own immigrant experience, she is deeply committed to serving clients navigating the complexities of the U.S. immigration system.
+                            </p>
+                             <p class="bio-text text-gray-700 leading-relaxed">
+                                Atty. Garcia is unwavering in her commitment to safeguarding the rights and aspirations of her clients, providing thoughtful counsel and robust advocacy. Her multilingual abilities in English and Tagalog allow her to effectively connect with and represent clients from diverse backgrounds.
+                            </p>
+                        </div>
+                    </div>
+
+                    <section class="content-section bio-text mb-8">
+                        <h3 class="sub-heading">Commitment to Service</h3>
+                        <p>Atty. Garcia's personal journey as an immigrant to the United States has firmly anchored her dedication to immigration law. She approaches each case with empathy, analytical acumen, and persuasive communication, ensuring her clients' best interests remain at the forefront. Her dedication extends beyond her professional role, as she actively volunteers her expertise in legal consultations and citizenship workshops, providing valuable assistance to immigrants.</p>
+                    </section>
+
+                    <section class="content-section bio-text mb-8">
+                        <h3 class="sub-heading">Focus Areas</h3>
+                        <ul>
+                            <li>Family-Based Immigration Petitions</li>
+                            <li>Adjustment of Status Applications</li>
+                            <li>Consular Processing</li>
+                            <li>Naturalization and Citizenship</li>
+                            <li>Non-Immigrant Visas</li>
+                            <li>General Immigration Law Matters</li>
+                        </ul>
+                    </section>
+                </div>
+
+                <aside class="lg:w-1/3 mt-12 lg:mt-0 animate-fade-in" style="animation-delay: 0.2s;">
+                    <div class="sticky top-28">
+                        <div class="sidebar-widget">
+                            <h3 class="sidebar-title">Credentials & Affiliations</h3>
+                            <div class="bio-text text-sm">
+                                <strong class="block text-primary">Education:</strong>
+                                <p class="ml-2 mb-1">- Master of Laws (LL.M.) in Environmental Law, The George Washington University Law School, Washington, D.C., USA</p>
+                                <p class="ml-2 mb-1">- Juris Doctor (J.D.), University of the Philippines College of Law, Philippines</p>
+                                <p class="ml-2 mb-3">- Bachelor of Arts Major in Interdisciplinary Studies, Minor in Philosophy, Ateneo De Manila University, Philippines</p>
+
+                                <strong class="block text-primary mt-3">Bar Admissions:</strong>
+                                <p class="ml-2 mb-1">- New York Bar</p>
+                                <p class="ml-2 mb-3">- Philippine Bar</p>
+
+                                <strong class="block text-primary mt-3">Recognition:</strong>
+                                <p class="ml-2 mb-3">- Recognized for exemplary Pro Bono service during her LL.M. at The George Washington University Law School.</p>
+                                
+                                <strong class="block text-primary mt-3">Languages:</strong>
+                                <p class="ml-2 mb-1">- English</p>
+                                <p class="ml-2 mb-3">- Tagalog</p>
+                            </div>
+                        </div>
+                        
+                        <div class="sidebar-widget bg-primary text-white text-center mt-8">
+                            <h3 class="sidebar-title" style="color:white; border-bottom-color: var(--color-secondary);">Consult with Atty. Garcia</h3>
+                            <p class="text-sm mb-4 leading-relaxed">To discuss your immigration case with Atty. Frances Klaire C. Garcia, please schedule a consultation.</p>
+                            <a href="contact.html?attorney=FrancesGarcia" class="btn-primary bg-secondary text-primary w-full">Schedule Consultation</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer pt-16 pb-8" style="background-color: var(--color-text-dark); color: #adb5bd;">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Valera & Associates PC</h5>
+                    <p class="text-sm mb-1">3900 Jermantown Road, Suite 100<br>Fairfax, Virginia 22030</p>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="services.html" class="footer-link">Services</a></li>
+                        <li><a href="our-team.html" class="footer-link">Our Team</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Legal</h5>
+                     <ul class="space-y-2 text-sm">
+                        <li><a href="privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="legal-disclaimer.html" class="footer-link">Legal Disclaimer</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h5 class="footer-title" style="font-family: 'Playfair Display', serif; color: white; font-size: 1.25rem; margin-bottom: 1rem;">Connect</h5>
+                    <a href="https://www.facebook.com/lawofficesvalera" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                 </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 mt-8 text-center">
+                <p class="text-xs">© 1995-<span id="current-year-attorney-garcia"></span> Law Offices of Valera & Associates PC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButtonAttorneyGarcia = document.getElementById('mobile-menu-button-attorney-garcia');
+        const mobileMenuAttorneyGarcia = document.getElementById('mobile-menu-attorney-garcia');
+        if(mobileMenuButtonAttorneyGarcia && mobileMenuAttorneyGarcia) {
+            mobileMenuButtonAttorneyGarcia.addEventListener('click', () => {
+                mobileMenuAttorneyGarcia.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu-attorney-garcia a').forEach(link => {
+                link.addEventListener('click', () => {
+                     if (link.getAttribute('href').includes('.html')) { 
+                        mobileMenuAttorneyGarcia.classList.add('hidden');
+                    }
+                });
+            });
+        }
+        // Sticky Header
+        const headerAttorneyGarcia = document.getElementById('main-header');
+        let lastScrollTopAttorneyGarcia = 0;
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if(headerAttorneyGarcia){
+                if (scrollTop > lastScrollTopAttorneyGarcia && scrollTop > 80) { headerAttorneyGarcia.style.top = '-150px'; } 
+                else { headerAttorneyGarcia.style.top = '0'; }
+                if (scrollTop > 50) { headerAttorneyGarcia.classList.add('py-3', 'shadow-lg'); headerAttorneyGarcia.classList.remove('py-4'); } 
+                else { headerAttorneyGarcia.classList.remove('py-3', 'shadow-lg'); headerAttorneyGarcia.classList.add('py-4'); }
+            }
+            lastScrollTopAttorneyGarcia = scrollTop <= 0 ? 0 : scrollTop; 
+        });
+        // Set current year in footer
+        const currentYearAttorneyGarciaEl = document.getElementById('current-year-attorney-garcia');
+        if(currentYearAttorneyGarciaEl){
+            currentYearAttorneyGarciaEl.textContent = new Date().getFullYear();
+        }
+        // Intersection Observer for animations
+        const animatedElementsAttorneyGarcia = document.querySelectorAll('.animate-fade-in');
+         if (typeof IntersectionObserver !== 'undefined') {
+            const observerAttorneyGarcia = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observerAttorneyGarcia.unobserve(entry.target); 
+                    }
+                });
+            }, { threshold: 0.1 });
+            animatedElementsAttorneyGarcia.forEach(el => {
+                observerAttorneyGarcia.observe(el);
+            });
+        } else {
+            animatedElementsAttorneyGarcia.forEach(el => {
+                el.classList.add('is-visible');
+            });
+        }
+    </script>
+</body>
+</html>
